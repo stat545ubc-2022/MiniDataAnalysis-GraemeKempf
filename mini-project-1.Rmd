@@ -80,10 +80,10 @@ And that is exactly the first thing that you will do!
 
 <!-------------------------- Start your work below ---------------------------->
 
-1: CHOICE_1\_HERE\
-2: CHOICE_2\_HERE\
-3: CHOICE_3\_HERE\
-4: CHOICE_4\_HERE
+1: apt_buildings
+2: building_permits
+3: cancer_sample
+4: parking_meters
 
 <!----------------------------------------------------------------------------->
 
