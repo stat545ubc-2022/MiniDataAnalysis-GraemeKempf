@@ -40,19 +40,19 @@ library(tidyverse)
 
 ## For Both Milestones
 
--   Each milestone is worth 45 points. The number of points allocated to
-    each task will be annotated within each deliverable. Tasks that are
-    more challenging will often be allocated more points.
+- Each milestone is worth 45 points. The number of points allocated to
+  each task will be annotated within each deliverable. Tasks that are
+  more challenging will often be allocated more points.
 
--   10 points will be allocated to the reproducibility, cleanliness, and
-    coherence of the overall analysis. While the two milestones will be
-    submitted as independent deliverables, the analysis itself is a
-    continuum - think of it as two chapters to a story. Each chapter, or
-    in this case, portion of your analysis, should be easily followed
-    through by someone unfamiliar with the content.
-    [Here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/)
-    is a good resource for what constitutes “good code”. Learning good
-    coding practices early in your career will save you hassle later on!
+- 10 points will be allocated to the reproducibility, cleanliness, and
+  coherence of the overall analysis. While the two milestones will be
+  submitted as independent deliverables, the analysis itself is a
+  continuum - think of it as two chapters to a story. Each chapter, or
+  in this case, portion of your analysis, should be easily followed
+  through by someone unfamiliar with the content.
+  [Here](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/)
+  is a good resource for what constitutes “good code”. Learning good
+  coding practices early in your career will save you hassle later on!
 
 ## For Milestone 1
 
@@ -76,11 +76,11 @@ for tagging your release on Github.
 
 By the end of this milestone, you should:
 
--   Become familiar with your dataset of choosing
--   Select 4 questions that you would like to answer with your data
--   Generate a reproducible and clear report using R Markdown
--   Become familiar with manipulating and summarizing your data in
-    tibbles using `dplyr`, with a research question in mind.
+- Become familiar with your dataset of choosing
+- Select 4 questions that you would like to answer with your data
+- Generate a reproducible and clear report using R Markdown
+- Become familiar with manipulating and summarizing your data in tibbles
+  using `dplyr`, with a research question in mind.
 
 # Task 1: Choose your favorite dataset (10 points)
 
@@ -88,42 +88,42 @@ The `datateachr` package by Hayley Boyce and Jordan Bourak currently
 composed of 7 semi-tidy datasets for educational purposes. Here is a
 brief description of each dataset:
 
--   *apt_buildings*: Acquired courtesy of The City of Toronto’s Open
-    Data Portal. It currently has 3455 rows and 37 columns.
+- *apt_buildings*: Acquired courtesy of The City of Toronto’s Open Data
+  Portal. It currently has 3455 rows and 37 columns.
 
--   *building_permits*: Acquired courtesy of The City of Vancouver’s
-    Open Data Portal. It currently has 20680 rows and 14 columns.
+- *building_permits*: Acquired courtesy of The City of Vancouver’s Open
+  Data Portal. It currently has 20680 rows and 14 columns.
 
--   *cancer_sample*: Acquired courtesy of UCI Machine Learning
-    Repository. It currently has 569 rows and 32 columns.
+- *cancer_sample*: Acquired courtesy of UCI Machine Learning Repository.
+  It currently has 569 rows and 32 columns.
 
--   *flow_sample*: Acquired courtesy of The Government of Canada’s
-    Historical Hydrometric Database. It currently has 218 rows and 7
-    columns.
+- *flow_sample*: Acquired courtesy of The Government of Canada’s
+  Historical Hydrometric Database. It currently has 218 rows and 7
+  columns.
 
--   *parking_meters*: Acquired courtesy of The City of Vancouver’s Open
-    Data Portal. It currently has 10032 rows and 22 columns.
+- *parking_meters*: Acquired courtesy of The City of Vancouver’s Open
+  Data Portal. It currently has 10032 rows and 22 columns.
 
--   *steam_games*: Acquired courtesy of Kaggle. It currently has 40833
-    rows and 21 columns.
+- *steam_games*: Acquired courtesy of Kaggle. It currently has 40833
+  rows and 21 columns.
 
--   *vancouver_trees*: Acquired courtesy of The City of Vancouver’s Open
-    Data Portal. It currently has 146611 rows and 20 columns.
+- *vancouver_trees*: Acquired courtesy of The City of Vancouver’s Open
+  Data Portal. It currently has 146611 rows and 20 columns.
 
 **Things to keep in mind**
 
--   We hope that this project will serve as practice for carrying our
-    your own *independent* data analysis. Remember to comment your code,
-    be explicit about what you are doing, and write notes in this
-    markdown document when you feel that context is required. As you
-    advance in the project, prompts and hints to do this will be
-    diminished - it’ll be up to you!
+- We hope that this project will serve as practice for carrying our your
+  own *independent* data analysis. Remember to comment your code, be
+  explicit about what you are doing, and write notes in this markdown
+  document when you feel that context is required. As you advance in the
+  project, prompts and hints to do this will be diminished - it’ll be up
+  to you!
 
--   Before choosing a dataset, you should always keep in mind **your
-    goal**, or in other ways, *what you wish to achieve with this data*.
-    This mini data-analysis project focuses on *data wrangling*,
-    *tidying*, and *visualization*. In short, it’s a way for you to get
-    your feet wet with exploring data on your own.
+- Before choosing a dataset, you should always keep in mind **your
+  goal**, or in other ways, *what you wish to achieve with this data*.
+  This mini data-analysis project focuses on *data wrangling*,
+  *tidying*, and *visualization*. In short, it’s a way for you to get
+  your feet wet with exploring data on your own.
 
 And that is exactly the first thing that you will do!
 
@@ -438,7 +438,7 @@ cancer_sample %>% ggplot(aes(area_worst)) + geom_histogram() + xlab('Worst (larg
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 ``` r
 #Create two histograms separating observations by diagnosis
@@ -447,7 +447,7 @@ cancer_sample %>% ggplot(aes(area_worst)) + geom_histogram() + facet_wrap(~diagn
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
 ### Exercise 4
 
@@ -469,7 +469,7 @@ other.
 cancer_sample %>% ggplot(aes(area_worst, texture_mean)) + geom_point(size = 0.75)  + xlab('Worst (largest) radius of nuclei') + ylab('Average texture of nuclei')
 ```
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 ### Exercise 5
 
@@ -535,14 +535,14 @@ nuclei was related to diagnosis.
 cancer_sample %>% ggplot(aes(y = perimeter_mean)) + geom_boxplot()  + ylab('Mean perimeter of nuclei')
 ```
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 ``` r
 #Create side-by-side boxplots for benign and malignant observations respectively
 cancer_sample %>% ggplot(aes(x = diagnosis, y = perimeter_mean)) + geom_boxplot()  + xlab('Diagnosis') + ylab('Mean perimter of nuclei')
 ```
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-10-2.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-10-2.png)<!-- -->
 
 <!----------------------------------------------------------------------------->
 
@@ -671,7 +671,7 @@ cancer_sample %>% group_by(Diagnosis = diagnosis) %>% summarise('Number of Obser
 cancer_sample %>% ggplot(aes(radius_worst, fill = diagnosis)) + geom_density(alpha = .5) + xlab('Worst (largest) radius of nuclei')
 ```
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ### Research Question \#2
 
@@ -756,7 +756,7 @@ cancer_sample %>% group_by(Diagnosis = diagnosis) %>% summarise(min(area_se), ma
 cancer_sample %>% ggplot(aes(area_se, area_worst, colour = diagnosis)) + geom_point(alpha = .4) + scale_x_log10('Standard deviation of the area of a nuclei') + ylab('Worst (largest) area of nuclei')
 ```
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
 
 ``` r
 #Graphing Exercise 8
@@ -764,19 +764,19 @@ cancer_sample %>% ggplot(aes(area_se, area_worst, colour = diagnosis)) + geom_po
 cancer_sample %>% ggplot() + geom_histogram(aes(compactness_se), bins = 70) + xlab('Standard error of the compactness of nuclei')
 ```
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-12-2.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-12-2.png)<!-- -->
 
 ``` r
 cancer_sample %>% ggplot() + geom_histogram(aes(texture_se), bins = 30) + xlab('Standard error of the texture of nuclei')
 ```
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-12-3.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-12-3.png)<!-- -->
 
 ``` r
 cancer_sample %>% ggplot() + geom_histogram(aes(symmetry_se), bins = 10) + xlab('Standard error of the symmetry of nuclei')
 ```
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-12-4.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-12-4.png)<!-- -->
 
 ### Research Question \#3
 
@@ -821,7 +821,7 @@ cancer_sample %>% group_by(diagnosis) %>% summarise(min(area_mean), max(area_mea
 cancer_sample %>% ggplot(aes(diagnosis, symmetry_worst)) + geom_jitter(alpha = 0.4, width = .15, size = 0.8)
 ```
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 ### Research Question \#4
 
@@ -913,7 +913,7 @@ cancer_sample %>% ggplot(aes(x = area_worst, y = radius_worst)) + geom_point(alp
 
     ## `geom_smooth()` using formula 'y ~ x'
 
-![](mini-project-1,-version-1_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](mini-project-1_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 <!----------------------------------------------------------------------------->
 
