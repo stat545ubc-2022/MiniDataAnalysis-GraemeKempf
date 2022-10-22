@@ -1,3 +1,0 @@
-diagnosis,min(area_mean),max(area_mean),mean(area_mean),median(area_mean),IQR(area_mean)
-B,143.5,992.1,462.7901960784314,458.4,172.90000000000003
-M,361.6,2501,978.3764150943397,932,498.44999999999993
